@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4682B4;
+}
+
+header {
+    background-color: #00008B;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    max-width: 54%;
+    margin: 20px auto; /* Увеличил отступ от верхнего и нижнего края контейнера */
+    padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #E0FFFF;
+}
+
+.side-section {
+    flex: 1;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: #87CEEB;
+}
+
+.personal-info {
+	background-color: #E0FFFF;
+    text-align: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.central-section {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.degree{
+	background-color: #F0F8FF;
+	display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.job{
+	background-color: #F0F8FF;
+}
+
+.d-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.d-name {
+    flex-grow: 1;
+}
+
+.reference-item {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.reference-item img {
+    width: 50px; /* Регулируйте размер изображения по вашему желанию */
+    height: auto;
+}
+
+meter {
+    width: 300px; /* Ширина кружочка */
+    height: 50px; /* Высота кружочка */
+    border-radius: 50%; /* Делаем кружочек круглым */
+    display: inline-block;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+	margin: 0;
+}
+
+footer {
+    background-color: #00008B;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+.social-icons>li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.social-icons a {
+  position: relative;
+  background-color: #eee;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color .3s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .25rem;
+}
+.social-icons a:hover {
+  background-color: #e0e0e0;
+}
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: .65rem;
+  top: .65rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+.social-icons .social-icon-github::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/25/25231.png");
+}
+.social-icons .social-icon-telegram::before {
+  background-image: url("https://w7.pngwing.com/pngs/402/10/png-transparent-telegram-logo-scalable-graphics-icon-logo-blue-angle-triangle.png");
+}
+.social-icons .social-icon-instagram::before {
+  background-image: url("https://pngicon.ru/file/uploads/instagram.png");
+}
+.social-icons .social-icon-vk::before {
+  background-image: url("https://pngicon.ru/file/uploads/vk.png");
+}
+.social-icons .social-icon-linkedin::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/145/145807.png");
+}
+
+.download {
+	padding: 30px;
+    text-align: center;
+}
+
+.download a {
+	display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #00008B;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download a:hover {
+	background-color: #00008B;
+}
+
+
+.contackwithme form {
+    background-color: #F0F8FF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contackwithme label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contackwithme input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+} 
+	
+.contackwithme input:invalid, textarea:invalid {
+    border: 1px solid #ff0000;
+}
+
+.contackwithme input:invalid + span, textarea:invalid + span {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 4px;
+    display: block;
+}
+
+.contackwithme button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contackwithme button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.contackwithme button:hover {
+  background-color: #45a049;
+}
+
+.dialog-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .dialog-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .dialog-box p {
+      margin-bottom: 20px;
+    }
+
+    .dialog-box button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .dialog-box button:hover {
+      background-color: #45a049;
+    }
