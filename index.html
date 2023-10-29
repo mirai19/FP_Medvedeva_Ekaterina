@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+
+			<button onclick="calculator.clearDisplay()">C</button>
+			<button onclick="calculator.undo()">Undo</button>
+			<button onclick="calculator.appendCharacter('/')">/</button>
+			<button onclick="calculator.appendCharacter('*')">*</button>
+			<button onclick="calculator.appendCharacter('7')">7</button>
+			<button onclick="calculator.appendCharacter('8')">8</button>
+			<button onclick="calculator.appendCharacter('9')">9</button>
+			<button onclick="calculator.appendCharacter('-')">-</button>
+			<button onclick="calculator.appendCharacter('4')">4</button>
+			<button onclick="calculator.appendCharacter('5')">5</button>
+			<button onclick="calculator.appendCharacter('6')">6</button>
+			<button onclick="calculator.appendCharacter('+')">+</button>
+			<button onclick="calculator.appendCharacter('1')">1</button>
+			<button onclick="calculator.appendCharacter('2')">2</button>
+			<button onclick="calculator.appendCharacter('3')">3</button>
+			<button onclick="calculator.calculate()">=</button>
+			<button onclick="calculator.appendCharacter('0')">0</button>
+			<button onclick="calculator.appendCharacter('.')">.</button>
+			<button onclick="calculator.appendCharacter('^')">^</button>
+			<button onclick="calculator.appendCharacter('Math.sqrt(')">√</button>
+			<button onclick="calculator.appendCharacter('(')">(</button>
+			<button onclick="calculator.appendCharacter(')')">)</button>
+
+        </div>
+		<div id="history"></div>
+    </div>
+	
+    <script src="calculator.js"></script>
+</body>
+</html>
