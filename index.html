@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styles.css">
+	<script src="js\validate.js?ver=1.2.0"></script>
+    <title>CV Medvedeva Ekaterina</title>
+</head>
+<body>
+	<header>
+        <div class="header-content">
+            <h1>Medvedeva Ekaterina</h1>
+            <p>Software Engineer</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="side-section">
+            <div class="personal-info">
+                <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
+                <h2>Medvedeva Ekaterina</h2>
+                <p>Software Engineer</p>
+            </div>
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>Email: 19mirai19@gmail.com</p>
+                <p>Phone: +7(937)10-00-591</p>
+            </div>
+            
+            <div class="references">
+                <h2>References</h2>
+                 <ul class="social-icons">
+				  <li><a class="social-icon-github" href="#" title="..." target="_blank" rel="noopener"></a></li>
+				  <li><a class="social-icon-linkedin" href="#" title="..." target="_blank" rel="noopener"></a></li>
+				  <li><a class="social-icon-telegram" href="#" title="..." target="_blank" rel="noopener"></a></li>
+				  <li><a class="social-icon-instagram" href="#" title="..." target="_blank" rel="noopener"></a></li>
+				  <li><a class="social-icon-vk" href="#" title="..." target="_blank" rel="noopener"></a></li>
+				</ul>
+            </div>
+			
+            <div class="download">
+				<a href="CV.docx" download>Download CV</a>
+			</div>
+           
+        </div>
+        
+        <div class="central-section">
+            <div class="profile">
+                <h2>Profile</h2>
+                <p>Software engineer with a passion for creating efficient and innovative solutions.
+				Proficient in programming languages, data structures, and algorithms, dedicated to ongoing professional development in software development.</p>
+            </div>
+			
+			 <div class="work-experience">
+                <h2>Work Experience</h2>
+                <div class="job">
+				
+                    <h3>NetCracker LLC</h3>
+					<p>The leading provider of BSS/OSS solutions to service providers around the world.</p>
+					<p>Company website: <a href="https://www.netcracker.com/" target="_blank">https://www.netcracker.com/</a></p>
+                    <h4>Junior Software Engineer - July 2021 to October 2022</h4>
+                    <h4>Software Engineer - October 2022 to Present Now</h4>
+                </div>
+				
+            </div>
+			
+			<div class="education">
+                <h2>Education</h2>
+                <div class="degree">
+				    <div>
+						<br><h4>2018-2022</h4>
+					</div>
+					<div>
+						<p>Samara National Research University Technology</p>
+						<p>Bachelor of Science</p>
+						<p>Fundamental Computer Science and Information Technology</p>
+					</div>
+				</div>
+            </div>
+		
+            
+            <div class="skills">
+				<h2>Skills</h2>
+				<div class="d-item">
+					<span class="d-name">SQL</span>
+					<meter value="90" max="100"></meter>
+				</div>
+				<div class="d-item">
+					<span class="d-name">Java</span>
+					<meter value="75" max="100"></meter>
+				</div>
+				<p><u>Another skills:</u> JIRA, SVN, Git, maven, WebServices, JSP, XML, SoapUI</p>
+			</div>
+			
+			<div class="languages">
+				<h2>Languages</h2>
+				<div class="d-item">
+					<span class="d-name">Russian</span>
+					<meter value="100" max="100"></meter>
+				</div>
+				<div class="d-item">
+					<span class="d-name">English</span>
+					<meter value="60" max="100"></meter>
+				</div>
+			</div>
+			
+			<div class="contackwithme">
+				<h2>Contact</h2>
+				<form id="feedbackForm">
+					<label for="firstName">First Name:</label>
+					<input type="text" id="firstName" name="firstName" required>
+					<span></span>
+
+					<label for="lastName">Last Name:</label>
+					<input type="text" id="lastName" name="lastName" required>
+					<span></span>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required placeholder="example@example.com">
+					<span></span>
+
+					<label for="phone">Phone Number:</label>
+					<input type="tel" id="phone" name="phone" pattern="\+\d{1,3}\(\d{3}\)\d{2}-\d{2}-\d{3}" placeholder="+X(XXX)XX-XX-XXX">
+					<span></span>
+
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+					<span></span>
+
+					<button type="button" onclick="validateForm()" id="submitButton">Submit</button>
+				  </form>
+				  
+				  <div class="dialog-overlay" id="dialogOverlay">
+					<div class="dialog-box" id="dialogBox">
+					  <p>Your feedback is being processed!</p>
+					  <button onclick="closeDialog()">Close</button>
+					</div>
+				  </div>
+
+		  </div>
+			
+        </div>
+		
+		
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Medvedeva Ekaterina. All rights reserved.</p>
+    </footer>
+</body>
+</html>
